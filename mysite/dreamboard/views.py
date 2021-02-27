@@ -11,19 +11,23 @@ from . import urls
 
 
 def index(request):
+    return render(request, 'dreamboard/index.html')
+
+
+def home(request):
+    return render(request, 'dreamboard/home.html')
+
+
+def addDream(request):
 
 
 
     if request.method == "GET":
         form = DreamForm()
-        return render(request, 'dreamboard/index.html', {'form':form, 'dreamboard_dream': dream.objects.all()})
+        return render(request, 'dreamboard/addDream.html', {'form':form, 'dreamboard_dream': dream.objects.all()})
     else:
         form = DreamForm(request.POST)
         if form.is_valid():
             form.save()
-        return render(request, 'dreamboard/index.html', {'form':form, 'dreamboard_dream': dream.objects.all()})
+        return render(request, 'dreamboard/addDream.html', {'form':form, 'dreamboard_dream': dream.objects.all()})
         #return redirect('index')
-
-
-def home(request):
-    return render(request, 'dreamboard/home.html')

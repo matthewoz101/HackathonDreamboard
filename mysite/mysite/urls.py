@@ -21,6 +21,7 @@ from dreamboard import views
 urlpatterns = [
     path('', views.home, name='home'),
     path('dreamboard/', views.index, name='index'),
+    path('addadream/', views.addDream, name='addDream'),
     path('admin/', admin.site.urls),
 
 ]
