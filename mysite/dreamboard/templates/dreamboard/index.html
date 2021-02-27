@@ -21,7 +21,40 @@
       <a href="{% url 'addDream' %}">Add Dream</a>
     </div>
 
-    <h1>This is a magical directory list of dreams</h1>
+    <br>
+
+    <h1 style="text-align:center">This is a magical directory list of dreams</h1>
+    <br>
+    <br>
+
+
+
+
+<div class="container-fluid d-flex flex-column justify-content-center ">
+
+      {% for dream in dreamboard_dream %}
+    <div class="container-fluid d-flex flex-column justify-content-center col-10 ">
+
+      <a href="#" class="d-flex list-group-item list-group-item-action flex-column align-items-start active">
+
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">{{dream.dreamItem}}</h5>
+          <small>{{dream.date}}</small>
+        </div>
+
+
+      </a>
+
+      <br>
+
+
+    </div>
+{% endfor %}
+  </div>
+
+
+
+
 
 
 

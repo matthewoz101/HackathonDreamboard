@@ -11,7 +11,7 @@ from . import urls
 
 
 def index(request):
-    return render(request, 'dreamboard/index.html')
+    return render(request, 'dreamboard/index.html', {'dreamboard_dream': dream.objects.all()})
 
 
 def home(request):
