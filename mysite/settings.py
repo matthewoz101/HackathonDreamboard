@@ -26,6 +26,7 @@ SECRET_KEY = '$hggs$iztdeeb@x0b=5y42ykz((un)jtmf--$1$z2778(we5@8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
+DEBUG_PROPAGATE_EXCEPTIONS = True
 
 ALLOWED_HOSTS = ['HokieDreamboard', 'localhost', '127.0.0.1']
 
