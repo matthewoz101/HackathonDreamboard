@@ -28,7 +28,7 @@ SECRET_KEY = '$hggs$iztdeeb@x0b=5y42ykz((un)jtmf--$1$z2778(we5@8'
 DEBUG = False
 DEBUG_PROPAGATE_EXCEPTIONS = True
 
-ALLOWED_HOSTS = ['https://hokiedreamboard.herokuapp.com/', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['hokiedreamboard.herokuapp.com', 'localhost', '127.0.0.1']
 
 STATICFILES_DIRS = [
     "/Projects/HokieBoard/mysite/dreamboard/static",
