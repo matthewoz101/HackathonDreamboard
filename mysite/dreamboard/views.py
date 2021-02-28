@@ -29,8 +29,8 @@ def addDream(request):
         form = DreamForm(request.POST)
         if form.is_valid():
             form.save()
-        return render(request, 'dreamboard/addDream.html', {'form':form, 'dreamboard_dream': dream.objects.all()})
-        #return redirect('index')
+        # return render(request, 'dreamboard/addDream.html', {'form':form, 'dreamboard_dream': dream.objects.all()})
+        return redirect('index')
 
 def displayDream(request, pk):
     dreamObject = dream.objects.get(id=pk)

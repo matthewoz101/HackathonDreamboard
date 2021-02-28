@@ -11,7 +11,7 @@
 
     <title>This is where individual dreams are displayed</title>
   </head>
-  <body>
+  <body >
 
 
     <div class="topnav">
@@ -20,9 +20,30 @@
       <a href="{% url 'addDream' %}">Add Dream</a>
     </div>
 
-    <h1>This is where individual dreams are displayed.</h1>
+    <br>
 
-    <h1>{{dreamObject.first_name}}</h1>
+    <div class="container ">
+      <h2>{{dreamObject.first_name}} {{dreamObject.last_name}}'s Dream...</h2>
+
+    </div>
+
+
+    <div class="container">
+  <div class="row">
+    <div class="col align-self-start">
+
+    </div>
+    <div class="col align-self-center">
+
+    </div>
+    <div class="col align-self-end border border-primary shadow p-3 mb-5 bg-white rounded">
+      <h1>{{dreamObject.dreamItem}}</h1>
+    </div>
+  </div>
+</div>
+
+
+
 
 
 
