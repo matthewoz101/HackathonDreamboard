@@ -23,5 +23,6 @@ urlpatterns = [
     path('dreamboard/', views.index, name='index'),
     path('addadream/', views.addDream, name='addDream'),
     path('admin/', admin.site.urls),
+    path('dreamboard/<int:pk>/', views.displayDream, name='displayDream'),
 
 ]

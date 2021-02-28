@@ -16,8 +16,8 @@
   <body>
 
     <div class="topnav">
-      <a class="active" href="{% url 'home' %}">Home</a>
-      <a href="{% url 'index' %}">DreamBoard</a>
+      <a href="{% url 'home' %}">Home</a>
+      <a class="active" href="{% url 'index' %}">DreamBoard</a>
       <a href="{% url 'addDream' %}">Add Dream</a>
     </div>
 
@@ -35,7 +35,7 @@
       {% for dream in dreamboard_dream %}
     <div class="container-fluid d-flex flex-column justify-content-center col-10 ">
 
-      <a href="#" class="d-flex list-group-item list-group-item-action flex-column align-items-start active">
+      <a href="{% url 'displayDream' dream.id %}" class="d-flex list-group-item list-group-item-action flex-column align-items-start active">
 
         <div class="d-flex w-100 justify-content-between">
           <h5 class="mb-1">{{dream.dreamItem}}</h5>

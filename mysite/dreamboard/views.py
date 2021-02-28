@@ -31,3 +31,10 @@ def addDream(request):
             form.save()
         return render(request, 'dreamboard/addDream.html', {'form':form, 'dreamboard_dream': dream.objects.all()})
         #return redirect('index')
+
+def displayDream(request, pk):
+    dreamObject = dream.objects.get(id=pk)
+
+    context = {'dreamObject' : dreamObject}
+
+    return render(request, 'dreamboard/displayDream.html', context)
