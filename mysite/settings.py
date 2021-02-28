@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '$hggs$iztdeeb@x0b=5y42ykz((un)jtmf--$1$z2778(we5@8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 DEBUG_PROPAGATE_EXCEPTIONS = True
 
 ALLOWED_HOSTS = ['hokiedreamboard.herokuapp.com', 'localhost', '127.0.0.1']
